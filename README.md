@@ -22,5 +22,5 @@ npm run start
 
 ### Index 📚
 
-1. **[react-ts-boilerplate](https://github.com/yondo123/react-playground/blob/react-ts-boilerplate/README.md)**
+1. **[react-ts-boilerplate](https://github.com/yondo123/react-playground/blob/react-ts-boilerplate/)**  
    `playground`에서 사용할 webpack, babel로 구성된 React 보일러 플레이트입니다. **(지속적으로 업데이트 예정)**
