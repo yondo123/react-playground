@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2016", //compile ecma version
+    "noEmitOnError": true,
+    "incremental": true,
     "allowJs": true, //JS 허용
     "module": "ESNext",
     "moduleResolution": "node", //모듈 해석 전략
