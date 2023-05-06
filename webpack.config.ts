@@ -43,6 +43,9 @@ const webpackConfig: webpack.Configuration = {
     static: {
       directory: path.resolve(__dirname, 'dist')
     },
+    client: {
+      overlay: false
+    },
     port: 3000
   },
   plugins: [
