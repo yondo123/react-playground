@@ -18,6 +18,6 @@ psd
 thumb
 sketch
 /dist
-.mockServiceWorker.js
+mockServiceWorker.js
 
 # End of https://www.toptal.com/developers/gitignore/api/react
