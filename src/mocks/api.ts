@@ -1,5 +1,13 @@
 import { rest } from 'msw';
 
+const USERS = ['jiny', 'admin'];
+const TOKENS = ['d3a88eec', '8c2299'];
+const USER = {
+  id: 'jiny',
+  name: 'jiny',
+  avatar: 'https://www.gravatar.com/avatar/768?d=monsterid&f=y'
+};
+
 const FOLLOWERS = [
   {
     id: 'mario',
@@ -80,21 +88,53 @@ MUST NOT include a querystring (if it does, it will be ignored)`
 ];
 
 export const handlers = [
+  rest.post('/auth', async (req, res, ctx) => {
+    const reqBody = await req.json();
+    if (USERS.includes(reqBody.userId as string)) {
+      return res(
+        ctx.status(200),
+        ctx.json({
+          success: true,
+          errorMessage: null,
+          data: {
+            auth: true,
+            token: 'd3a88eec'
+          }
+        })
+      );
+    }
+    res(
+      ctx.status(403),
+      ctx.json({
+        success: true,
+        errorMessage: null,
+        data: false
+      })
+    );
+  }),
+  rest.post('/userInfo', async (req, res, ctx) => {
+    const reqBody = await req.json();
+
+    if (TOKENS.includes(reqBody.token as string)) {
+      return res(
+        ctx.status(200),
+        ctx.json({
+          success: true,
+          errorMessage: null,
+          data: USER
+        })
+      );
+    }
+  }),
   rest.get('/followers', (req, res, ctx) => {
-    //   throw new Error('Something went wrong');
     return res(
       ctx.status(200),
       ctx.delay(700),
       ctx.json({
-        success: true,
+        success: false,
         errorMessage: null,
         data: FOLLOWERS
       })
-      //   ctx.json({
-      //     success: false,
-      //     errorMessage: '알수없는 에러입니다.',
-      //     data: null
-      //   })
     );
   }),
   rest.get('/menulist', (req, res, ctx) => {
