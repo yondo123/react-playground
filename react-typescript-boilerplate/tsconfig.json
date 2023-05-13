@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2016", //compile ecma version
+    "allowJs": true, //JS 허용
+    "module": "ESNext",
+    "moduleResolution": "node", //모듈 해석 전략
+    "strictFunctionTypes": true, //엄격한 함수 타입 체크
+    "esModuleInterop": true, //allow import-export
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "strict": true, //
+    "forceConsistentCasingInFileNames": true, //대소문자 엄격 구분
+    "noFallthroughCasesInSwitch": true, //Switch break 구문 필수
+    "noEmit": true, //결과물을 생성하지 않음
+    "noImplicitAny": true, //암묵적인 Any 사용 금지
+    "resolveJsonModule": true, //JSON 파일을 허용합니다.
+    "sourceMap": true,
+    "baseUrl": ".",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"]
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["src/"],
+  "exclude": ["node_modules"]
+}
