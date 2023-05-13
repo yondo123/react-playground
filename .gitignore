@@ -17,5 +17,7 @@ bower_components
 psd
 thumb
 sketch
+/dist
+mockServiceWorker.js
 
 # End of https://www.toptal.com/developers/gitignore/api/react

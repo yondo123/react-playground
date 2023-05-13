@@ -16,7 +16,9 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.4",
+    "react-query": "^3.39.3"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
@@ -35,8 +37,10 @@
     "@types/webpack-dev-server": "^4.7.2",
     "babel-loader": "^9.1.2",
     "browserlist": "^1.0.1",
+    "copy-webpack-plugin": "^11.0.0",
     "cross-env": "^7.0.3",
     "html-webpack-plugin": "^5.5.1",
+    "msw": "^1.2.1",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.0",
     "source-map-loader": "^4.0.1",
@@ -46,5 +50,8 @@
     "webpack": "^5.81.0",
     "webpack-cli": "^5.0.2",
     "webpack-dev-server": "^4.13.3"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
