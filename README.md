@@ -22,7 +22,9 @@ npm run start
 
 ### Index 📚
 
-1. **[react-ts-boilerplate](https://github.com/yondo123/react-playground/blob/react-ts-boilerplate/)**  
+1. **[React With TypeScript Boilerplate](https://github.com/yondo123/react-playground/blob/react-ts-boilerplate/)**  
    `playground`에서 사용할 webpack, babel로 구성된 React 보일러 플레이트입니다. **(지속적으로 업데이트 예정)**
-2. **[react-awesome-fetching](https://github.com/yondo123/react-playground/tree/main/react-awesome-fetching)**  
+2. **[React Awesome Fetching](https://github.com/yondo123/react-playground/tree/main/react-awesome-fetching)**  
    `React Suspense`와 `ErrorBoundary`를 활용하여 비동기 데이터를 다루는 방법에 대해서 학습합니다.
+3. **[Next 13 App Route](https://github.com/yondo123/react-playground/tree/main/react-awesome-fetching)**  
+   Next 13에 도입된 `App Route` 방식을 이해하기 위해 간단한 날씨 API를 활용해 서버 컴포넌트와 클라이언트 컴포넌트를 이해합니다.
